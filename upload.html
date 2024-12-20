@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Car Image</title>
+</head>
+<body>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="image">Select image to upload:</label>
+        <input type="file" name="image" id="image" required>
+        <br>
+        <label for="model">Car Model:</label>
+        <input type="text" name="model" id="model" required>
+        <br>
+        <label for="capacity">Capacity:</label>
+        <input type="number" name="capacity" id="capacity" required>
+        <br>
+        <label for="price">Price per day:</label>
+        <input type="number" name="price" id="price" required>
+        <br>
+        <input type="submit" value="Upload Image" name="submit">
+    </form>
+</body>
+</html>
